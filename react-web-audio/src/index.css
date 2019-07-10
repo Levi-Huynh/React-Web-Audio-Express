@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 2rem;
+  font-family: Helvetica, Arial, sans-serif;
+  display: grid;
+  background: #333e5a;
+  text-align: center;
+}
+
+a {
+  color: navy;
+}
+
+header {
+  /* background: #f0293e; */
+  color: black;
+  text-align: center;
+}
+
+main {
+  min-height: 80vh;
+  background: #fff;
+}
+main .controls {
+  text-align: center;
+  padding: 0.5em 0;
+  background: #333e5a;
+  color: #fff;
+}
+main canvas {
+  padding: 20px;
+  margin: 0 auto;
+  display: block;
+}
+footer {
+  background: #333e5a;
+  color: #fff;
+  text-align: center;
+}
+
+textarea {
+  width: 80%;
+  height: 100px;
+}
+
+.Bear {
+  width: 200px;
+  height: 100px;
+  border: 1px solid red;
+
+  animation: slide-in 10s;
+  /* margin-left: 600px; */
+}
+
+@keyframes slide-in {
+  100% {
+    transform: translateX(1000%);
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-1000%);
+  }
+}
+
+.chartNav {
+  margin-right: 1rem;
+}
