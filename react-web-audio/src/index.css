@@ -3,8 +3,9 @@ body {
   padding: 2rem;
   font-family: Helvetica, Arial, sans-serif;
   display: grid;
-  background: #333e5a;
+  /* background: #333e5a; */
   text-align: center;
+  color: black;
 }
 
 a {
@@ -19,7 +20,6 @@ header {
 
 main {
   min-height: 80vh;
-  background: #fff;
 }
 main .controls {
   text-align: center;
@@ -33,8 +33,8 @@ main canvas {
   display: block;
 }
 footer {
-  background: #333e5a;
-  color: #fff;
+  /* background: #333e5a;
+  color: #fff; */
   text-align: center;
 }
 
@@ -49,6 +49,8 @@ textarea {
   border: 1px solid red;
 
   animation: slide-in 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 180s;
   /* margin-left: 600px; */
 }
 

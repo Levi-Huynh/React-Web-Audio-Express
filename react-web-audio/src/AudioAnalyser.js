@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
-import AudioVisualiser from './AudioVisualiser';
-import Animal from './Animal';
+import React, { Component } from "react";
+import AudioVisualiser from "./AudioVisualiser";
+import Animal from "./Animal";
+
 class AudioAnalyser extends Component {
   constructor(props) {
     super(props);
@@ -33,11 +34,11 @@ class AudioAnalyser extends Component {
   render() {
     // console.log("audiodata State:" , this.state.audioData);
     return (
-    <div>
-     <AudioVisualiser audioData={this.state.audioData} />
-    <textarea value={this.state.audioData}/>
-    <Animal audioData={this.state.audioData}/>
-    </div>
+      <div>
+        <AudioVisualiser audioData={this.state.audioData} />
+        <textarea value={this.state.audioData} />
+        <Animal audioData={this.state.audioData} />
+      </div>
     );
   }
 }

@@ -4,6 +4,7 @@ import { Route, NavLink, withRouter } from "react-router-dom";
 import AudioAnalyser from "./AudioAnalyser";
 import Chart from "./chart";
 import Form from "./ScoresForm";
+var bg = require("./img/junglebg.png");
 
 class App extends Component {
   constructor(props) {
@@ -37,7 +38,15 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div
+        className="wrapper"
+        style={{
+          backgroundImage: "url(" + bg + ")",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat"
+        }}
+      >
         <header>
           <div className="controls">
             <button onClick={this.toggleMicrophone}>
